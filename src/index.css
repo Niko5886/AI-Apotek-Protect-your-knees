@@ -18,6 +18,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* Non-interactive text should never show the text I-beam cursor */
   cursor: default;
+  /* No text-editing caret anywhere — this is a display site with no inputs
+     (also hides the blinking caret if the browser's caret-browsing/F7 is on) */
+  caret-color: transparent;
+}
+
+/* Belt-and-braces: kill the caret and stray text selection on every element */
+* {
+  caret-color: transparent;
 }
 
 /* Only genuinely interactive elements get the pointer cursor */
