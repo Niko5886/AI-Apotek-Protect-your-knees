@@ -16,10 +16,10 @@ export default function Hero() {
       />
 
       {/* Floating pill navbar */}
-      <div className="absolute left-0 right-0 top-0 z-20 px-6 pt-6 md:px-10">
-        <nav className="flex items-center justify-between gap-4">
+      <div className="absolute left-0 right-0 top-0 z-20 px-6 pt-0 md:px-10">
+        <nav className="flex items-start justify-between gap-4">
           {/* Left pill: logo + brand */}
-          <div className="flex items-center rounded-full bg-neutral-900/90 p-2 backdrop-blur">
+          <div className="flex items-center rounded-b-2xl bg-neutral-900/90 px-1 pb-1 pt-0 backdrop-blur">
             <img
               src="/logo.jpg"
               alt="vit4ever Skinesium"
