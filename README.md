@@ -19,6 +19,10 @@
   <img src="https://img.shields.io/badge/License-MIT-fdf1e1" alt="License MIT" />
 </p>
 
+<p align="center">
+  <img src="assets/demo.gif" alt="AI Apotek — word-by-word hero reveal, count-up stats and the themed category view" width="100%" />
+</p>
+
 ---
 
 A single-screen hero for a fictional pharmacy brand, **AI Apotek** (repo: `Protect-your-knees`). A muted background video loops behind
