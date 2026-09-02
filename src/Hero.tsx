@@ -117,6 +117,11 @@ export default function Hero({ onOrder }: HeroProps) {
           </div>
           <p className="mt-1 text-right text-xs text-white/80 md:text-sm">sales</p>
         </div>
+
+        {/* Signature credit — subtle, bottom-right */}
+        <div className="pointer-events-none absolute bottom-3 right-5 z-20 select-none text-[10px] font-light uppercase tracking-[0.25em] text-white/35">
+          powered by <span className="font-normal text-white/60">N.Stoyanov</span>
+        </div>
       </div>
     </main>
   )
