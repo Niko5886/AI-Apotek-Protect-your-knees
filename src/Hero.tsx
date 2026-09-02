@@ -1,6 +1,6 @@
 import CountUp from './CountUp'
 
-const navLinks = ['platform', 'solutions', 'company', 'support']
+const navLinks = ['medications', 'discounts', 'company', 'support']
 
 export default function Hero() {
   return (
