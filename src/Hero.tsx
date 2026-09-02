@@ -19,13 +19,12 @@ export default function Hero() {
       <div className="absolute left-0 right-0 top-0 z-20 px-6 pt-6 md:px-10">
         <nav className="flex items-center justify-between gap-4">
           {/* Left pill: logo + brand */}
-          <div className="flex items-center gap-2 rounded-full bg-neutral-900/90 py-3 pl-4 pr-6 backdrop-blur">
+          <div className="flex items-center rounded-full bg-neutral-900/90 p-2 backdrop-blur">
             <img
               src="/logo.jpg"
               alt="vit4ever Skinesium"
-              className="h-8 w-auto rounded-md object-contain"
+              className="h-[53px] w-auto rounded-md object-contain"
             />
-            <span className="text-sm font-normal tracking-tight text-white">securify</span>
           </div>
 
           {/* Center pill: nav links (hidden on mobile) */}
