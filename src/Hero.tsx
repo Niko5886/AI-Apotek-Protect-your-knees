@@ -67,7 +67,7 @@ export default function Hero({ onOrder }: HeroProps) {
         {/* Giant staggered headline — one semantic heading, three positioned words */}
         <h1 className="contents">
           <span
-            className="hero-title reveal-word absolute left-4 top-[18%] text-[7.47vw] font-medium text-white [text-shadow:0_2px_24px_rgba(0,0,0,0.35)] md:left-10 md:text-[6.93vw]"
+            className="hero-title reveal-word absolute left-4 top-[23%] text-[7.47vw] font-medium text-white [text-shadow:0_2px_24px_rgba(0,0,0,0.35)] md:left-10 md:text-[6.93vw]"
             style={{ animationDelay: '0s' }}
           >
             protect
