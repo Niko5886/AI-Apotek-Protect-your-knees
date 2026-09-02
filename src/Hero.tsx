@@ -2,7 +2,9 @@ import CountUp from './CountUp'
 
 const navLinks = ['medications', 'discounts', 'company', 'support']
 
-export default function Hero() {
+type HeroProps = { onOrder: () => void }
+
+export default function Hero({ onOrder }: HeroProps) {
   return (
     <section className="relative h-screen w-full overflow-hidden bg-black">
       {/* Looping fullscreen background video */}
@@ -46,6 +48,7 @@ export default function Hero() {
           {/* Right button */}
           <button
             type="button"
+            onClick={onOrder}
             className="rounded-full bg-white px-6 py-3 text-sm font-normal text-black transition-colors hover:bg-neutral-200"
           >
             Order
