@@ -16,7 +16,7 @@ export default function OrderPage({ onBack }: OrderPageProps) {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Top bar — mirrors the hero navbar language */}
-      <header className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-5">
+      <header className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
         <button
           type="button"
           onClick={onBack}
@@ -31,7 +31,7 @@ export default function OrderPage({ onBack }: OrderPageProps) {
       </header>
 
       {/* Heading */}
-      <div className="mx-auto max-w-6xl px-6 pb-6 pt-6">
+      <div className="mx-auto max-w-6xl px-6 pb-6 pt-0">
         <h1 className="hero-title text-4xl font-medium tracking-tight md:text-5xl">shop by category</h1>
         <p className="mt-3 text-sm text-white/60 md:text-base">browse our pharmacy ranges</p>
       </div>
