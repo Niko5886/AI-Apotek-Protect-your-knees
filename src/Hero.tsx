@@ -23,7 +23,7 @@ export default function Hero() {
             <img
               src="/logo.jpg"
               alt="vit4ever Skinesium"
-              className="h-[53px] w-auto rounded-md object-contain"
+              className="h-[106px] w-auto rounded-md object-contain"
             />
           </div>
 
