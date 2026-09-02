@@ -1,3 +1,5 @@
+import CountUp from './CountUp'
+
 const navLinks = ['platform', 'solutions', 'company', 'support']
 
 export default function Hero() {
@@ -68,22 +70,19 @@ export default function Hero() {
           knees
         </h1>
 
-        {/* Stat — top right */}
-        <div className="absolute right-6 top-[14%] md:right-24">
-          <div className="flex items-center justify-end gap-3">
-            <span className="hidden h-px w-24 rotate-[20deg] bg-white/40 md:block" />
-            <span className="text-4xl font-medium tracking-tight text-white md:text-5xl">+65k</span>
-          </div>
-          <p className="mt-1 text-right text-xs text-white/70 md:text-sm">startups use</p>
-        </div>
-
         {/* Bottom gradient overlay */}
         <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-b from-transparent to-black" />
 
         {/* Stat — bottom left */}
         <div className="absolute bottom-20 left-6 md:bottom-24 md:left-20">
           <div className="flex items-center gap-3">
-            <span className="text-4xl font-medium tracking-tight text-white md:text-5xl">+1.5K</span>
+            <CountUp
+              to={1.5}
+              decimals={1}
+              prefix="+"
+              suffix="K"
+              className="text-4xl font-medium tabular-nums tracking-tight text-white md:text-5xl"
+            />
             <span className="hidden h-px w-24 rotate-[-20deg] bg-white/40 md:block" />
           </div>
           <p className="mt-1 text-xs text-white/70 md:text-sm">skiers protected</p>
@@ -93,7 +92,12 @@ export default function Hero() {
         <div className="absolute bottom-16 right-6 md:bottom-20 md:right-20">
           <div className="flex items-center justify-end gap-3">
             <span className="hidden h-px w-24 rotate-[-20deg] bg-white/40 md:block" />
-            <span className="text-4xl font-medium tracking-tight text-white md:text-5xl">300K+</span>
+            <CountUp
+              to={300}
+              decimals={0}
+              suffix="K+"
+              className="text-4xl font-medium tabular-nums tracking-tight text-white md:text-5xl"
+            />
           </div>
           <p className="mt-1 text-right text-xs text-white/70 md:text-sm">sales</p>
         </div>
