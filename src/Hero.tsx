@@ -19,13 +19,13 @@ export default function Hero() {
       <div className="absolute left-0 right-0 top-0 z-20 px-6 pt-0 md:px-10">
         <nav className="flex items-start justify-between gap-4">
           {/* Left pill: logo + brand */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-start gap-2">
             <img
               src="/logo.png"
               alt="vit4ever Skinesium"
               className="h-[141px] w-auto object-contain drop-shadow-lg"
             />
-            <span className="text-sm font-normal tracking-tight text-white drop-shadow">
+            <span className="pt-2 text-sm font-normal tracking-tight text-white drop-shadow">
               AI Apotek
             </span>
           </div>
