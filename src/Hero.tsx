@@ -68,11 +68,6 @@ export default function Hero() {
           knees
         </h1>
 
-        {/* Description */}
-        <p className="absolute left-6 top-[46%] max-w-[240px] text-[15px] leading-snug text-white/90 md:left-10">
-          we can guarding your data with utmost care, empowering you with privacy everywhere
-        </p>
-
         {/* Stat — top right */}
         <div className="absolute right-6 top-[14%] md:right-24">
           <div className="flex items-center justify-end gap-3">
