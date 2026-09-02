@@ -20,17 +20,11 @@ export default function Hero() {
         <nav className="flex items-center justify-between gap-4">
           {/* Left pill: logo + brand */}
           <div className="flex items-center gap-2 rounded-full bg-neutral-900/90 py-3 pl-4 pr-6 backdrop-blur">
-            <svg
-              viewBox="0 0 256 256"
-              className="h-5 w-5"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <path
-                d="M 128 192 L 128 256 L 64.5 256 L 32 223 L 0 192 L 0 128 L 64 128 Z M 256 192 L 256 256 L 192.5 256 L 160 223 L 128 192 L 128 128 L 192 128 Z M 128 64 L 128 128 L 64.5 128 L 32 95 L 0 64 L 0 0 L 64 0 Z M 256 64 L 256 128 L 192.5 128 L 160 95 L 128 64 L 128 0 L 192 0 Z"
-                fill="#ffffff"
-              />
-            </svg>
+            <img
+              src="/logo.jpg"
+              alt="vit4ever Skinesium"
+              className="h-8 w-auto rounded-md object-contain"
+            />
             <span className="text-sm font-normal tracking-tight text-white">securify</span>
           </div>
 
