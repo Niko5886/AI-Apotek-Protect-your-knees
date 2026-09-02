@@ -98,9 +98,9 @@ export default function Hero() {
         <div className="absolute bottom-16 right-6 md:bottom-20 md:right-20">
           <div className="flex items-center justify-end gap-3">
             <span className="hidden h-px w-24 rotate-[-20deg] bg-white/40 md:block" />
-            <span className="text-4xl font-medium tracking-tight text-white md:text-5xl">+300k</span>
+            <span className="text-4xl font-medium tracking-tight text-white md:text-5xl">300K+</span>
           </div>
-          <p className="mt-1 text-right text-xs text-white/70 md:text-sm">downloads</p>
+          <p className="mt-1 text-right text-xs text-white/70 md:text-sm">sales</p>
         </div>
       </div>
     </section>
