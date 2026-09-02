@@ -48,7 +48,7 @@ export default function Hero() {
             type="button"
             className="rounded-full bg-white px-6 py-3 text-sm font-normal text-black transition-colors hover:bg-neutral-200"
           >
-            get started
+            Order
           </button>
         </nav>
       </div>
