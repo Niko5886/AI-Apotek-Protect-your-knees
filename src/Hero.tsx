@@ -66,7 +66,7 @@ export default function Hero() {
           your
         </h1>
         <h1
-          className="hero-title reveal-word absolute left-[18%] top-[58%] text-[7.47vw] font-medium text-white md:left-[28%] md:text-[6.93vw]"
+          className="hero-title reveal-word absolute left-[13%] top-[62%] text-[7.47vw] font-medium text-white md:left-[22%] md:text-[6.93vw]"
           style={{ animationDelay: '0.9s' }}
         >
           knees
