@@ -64,7 +64,7 @@ export default function Hero() {
         <h1 className="hero-title absolute right-4 top-[38%] text-[14vw] font-medium text-white md:right-10 md:text-[13vw]">
           your
         </h1>
-        <h1 className="hero-title absolute left-[18%] top-[58%] text-[14vw] font-medium text-white md:left-[28%] md:text-[13vw]">
+        <h1 className="hero-title absolute left-[18%] top-[58%] text-[11.2vw] font-medium text-white md:left-[28%] md:text-[10.4vw]">
           knees
         </h1>
 
