@@ -19,11 +19,11 @@ export default function Hero() {
       <div className="absolute left-0 right-0 top-0 z-20 px-6 pt-0 md:px-10">
         <nav className="flex items-start justify-between gap-4">
           {/* Left pill: logo + brand */}
-          <div className="flex items-center rounded-b-2xl bg-neutral-900/90 px-1 pb-1 pt-0 backdrop-blur">
+          <div className="flex items-center">
             <img
-              src="/logo.jpg"
+              src="/logo.png"
               alt="vit4ever Skinesium"
-              className="h-[141px] w-auto rounded-md object-contain"
+              className="h-[141px] w-auto object-contain drop-shadow-lg"
             />
           </div>
 
