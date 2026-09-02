@@ -27,7 +27,13 @@ export default function CountUp({
   suffix = '',
   className,
 }: CountUpProps) {
-  const [value, setValue] = useState(0)
+  // Lazy init: start already at the target under reduced-motion to avoid a 0-frame flash.
+  const [value, setValue] = useState(() =>
+    typeof window !== 'undefined' &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      ? to
+      : 0,
+  )
   const rafRef = useRef<number>()
 
   useEffect(() => {
@@ -47,7 +53,10 @@ export default function CountUp({
     rafRef.current = requestAnimationFrame(tick)
 
     return () => {
-      if (rafRef.current) cancelAnimationFrame(rafRef.current)
+      if (rafRef.current !== undefined) {
+        cancelAnimationFrame(rafRef.current)
+        rafRef.current = undefined
+      }
     }
   }, [to, duration])
 
