@@ -88,10 +88,10 @@ export default function Hero() {
         {/* Stat — bottom left */}
         <div className="absolute bottom-20 left-6 md:bottom-24 md:left-20">
           <div className="flex items-center gap-3">
-            <span className="text-4xl font-medium tracking-tight text-white md:text-5xl">+1.5b</span>
+            <span className="text-4xl font-medium tracking-tight text-white md:text-5xl">+1.5K</span>
             <span className="hidden h-px w-24 rotate-[-20deg] bg-white/40 md:block" />
           </div>
-          <p className="mt-1 text-xs text-white/70 md:text-sm">gb data was protected</p>
+          <p className="mt-1 text-xs text-white/70 md:text-sm">skiers protected</p>
         </div>
 
         {/* Stat — bottom right */}
