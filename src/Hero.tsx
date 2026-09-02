@@ -53,13 +53,22 @@ export default function Hero() {
       {/* Foreground content (above the video) */}
       <div className="relative h-full w-full">
         {/* Giant staggered headline */}
-        <h1 className="hero-title absolute left-4 top-[18%] text-[11.2vw] font-medium text-white md:left-10 md:text-[10.4vw]">
+        <h1
+          className="hero-title reveal-word absolute left-4 top-[18%] text-[7.47vw] font-medium text-white md:left-10 md:text-[6.93vw]"
+          style={{ animationDelay: '0s' }}
+        >
           protect
         </h1>
-        <h1 className="hero-title absolute right-4 top-[38%] text-[11.2vw] font-medium text-white md:right-10 md:text-[10.4vw]">
+        <h1
+          className="hero-title reveal-word absolute right-4 top-[38%] text-[7.47vw] font-medium text-white md:right-10 md:text-[6.93vw]"
+          style={{ animationDelay: '0.28s' }}
+        >
           your
         </h1>
-        <h1 className="hero-title absolute left-[18%] top-[58%] text-[11.2vw] font-medium text-white md:left-[28%] md:text-[10.4vw]">
+        <h1
+          className="hero-title reveal-word absolute left-[18%] top-[58%] text-[7.47vw] font-medium text-white md:left-[28%] md:text-[6.93vw]"
+          style={{ animationDelay: '0.56s' }}
+        >
           knees
         </h1>
 
