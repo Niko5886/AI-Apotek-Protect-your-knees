@@ -61,13 +61,13 @@ export default function Hero() {
         </h1>
         <h1
           className="hero-title reveal-word absolute right-4 top-[38%] text-[7.47vw] font-medium text-white md:right-10 md:text-[6.93vw]"
-          style={{ animationDelay: '0.28s' }}
+          style={{ animationDelay: '0.45s' }}
         >
           your
         </h1>
         <h1
           className="hero-title reveal-word absolute left-[18%] top-[58%] text-[7.47vw] font-medium text-white md:left-[28%] md:text-[6.93vw]"
-          style={{ animationDelay: '0.56s' }}
+          style={{ animationDelay: '0.9s' }}
         >
           knees
         </h1>
