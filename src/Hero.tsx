@@ -65,7 +65,7 @@ export default function Hero() {
           your
         </h1>
         <h1 className="hero-title absolute left-[18%] top-[58%] text-[14vw] font-medium text-white md:left-[28%] md:text-[13vw]">
-          data
+          knees
         </h1>
 
         {/* Description */}
