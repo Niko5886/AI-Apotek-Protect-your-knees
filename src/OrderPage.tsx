@@ -2,14 +2,14 @@ type OrderPageProps = { onBack: () => void }
 
 // Purely visual category cards — no real navigation, matching the reference grid.
 const categories = [
-  { title: 'pharmacy & health', emoji: '💊' },
-  { title: 'homeopathy', emoji: '🌿' },
-  { title: 'schuessler salts', emoji: '🧂' },
-  { title: 'herbs & teas', emoji: '🍵' },
-  { title: 'cosmetics', emoji: '💄' },
-  { title: 'at home & outside', emoji: '🛁' },
-  { title: 'mom & baby', emoji: '👶' },
-  { title: 'her & him', emoji: '🧴' },
+  { title: 'pharmacy & health', img: '/categories/pharmacy-health.png' },
+  { title: 'homeopathy', img: '/categories/homeopathy.png' },
+  { title: 'schuessler salts', img: '/categories/schuessler-salts.png' },
+  { title: 'herbs & teas', img: '/categories/herbs-teas.png' },
+  { title: 'cosmetics', img: '/categories/cosmetics.png' },
+  { title: 'at home & outside', img: '/categories/at-home-outside.png' },
+  { title: 'mom & baby', img: '/categories/mom-baby.png' },
+  { title: 'her & him', img: '/categories/her-him.png' },
 ]
 
 export default function OrderPage({ onBack }: OrderPageProps) {
@@ -45,10 +45,8 @@ export default function OrderPage({ onBack }: OrderPageProps) {
               className="card-in flex flex-col items-center rounded-2xl bg-neutral-900/90 p-6 text-center ring-1 ring-white/10 backdrop-blur"
               style={{ animationDelay: `${i * 0.06}s` }}
             >
-              <div className="flex h-28 w-28 items-center justify-center rounded-full bg-white/5 ring-1 ring-white/10 md:h-32 md:w-32">
-                <span className="text-5xl" aria-hidden="true">
-                  {c.emoji}
-                </span>
+              <div className="h-28 w-28 overflow-hidden rounded-full ring-1 ring-white/10 md:h-32 md:w-32">
+                <img src={c.img} alt="" className="h-full w-full object-cover" />
               </div>
               <h2 className="mt-5 text-lg font-medium text-white">{c.title}</h2>
               <p className="mt-1 text-sm text-white/50">view products →</p>
