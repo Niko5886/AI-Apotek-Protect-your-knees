@@ -25,7 +25,7 @@
 
 ---
 
-A single-screen hero for a fictional pharmacy brand, **AI Apotek** (repo: `Protect-your-knees`). A muted background video loops behind
+A single-screen hero for a fictional pharmacy brand, **AI Apotek**. A muted background video loops behind
 a pure black-and-white interface: a floating pill navbar, an oversized headline that reveals word by word,
 and live statistics that count up from zero. The primary call-to-action opens a second, fully themed
 **category view** that mirrors the same visual language. Motion-safe, keyboard-accessible, and
@@ -67,8 +67,8 @@ Animation via `requestAnimationFrame` + CSS `@keyframes`. Imagery cut out with M
 ## 🚀 Run it locally
 
 ```bash
-git clone https://github.com/Niko5886/Protect-your-knees.git
-cd Protect-your-knees
+git clone https://github.com/Niko5886/AI-Apotek-Protect-your-knees.git
+cd AI-Apotek-Protect-your-knees
 npm install
 npm run dev
 ```
