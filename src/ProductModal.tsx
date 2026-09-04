@@ -69,6 +69,13 @@ export default function ProductModal({ onClose }: ProductModalProps) {
 
         {/* Product info */}
         <div className="flex flex-col gap-4 overflow-y-auto p-6 md:w-1/2 md:p-8">
+          <button
+            type="button"
+            onClick={onClose}
+            className="inline-flex w-fit items-center gap-2 rounded-full bg-white/5 px-4 py-2 text-sm text-white/70 ring-1 ring-white/10 transition-colors hover:text-white hover:ring-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+          >
+            <span aria-hidden="true">←</span> back
+          </button>
           <p className="text-xs uppercase tracking-[0.2em] text-white/45">vit4ever · food supplement</p>
           <h2
             id="product-modal-title"
