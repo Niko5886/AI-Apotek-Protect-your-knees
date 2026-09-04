@@ -33,7 +33,7 @@ export default function Hero({ onOrder }: HeroProps) {
               alt="AI Apotek"
               className="h-16 w-auto object-contain drop-shadow-lg md:h-[141px]"
             />
-            <span className="pt-2 text-sm font-normal tracking-tight text-white drop-shadow">
+            <span className="pt-2 text-[18.7px] font-normal tracking-tight text-white drop-shadow">
               AI Apotek
             </span>
           </div>
