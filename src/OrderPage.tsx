@@ -1,6 +1,9 @@
+import { useState } from 'react'
+import ProductModal from './ProductModal'
+
 type OrderPageProps = { onBack: () => void }
 
-// Purely visual category cards — no real navigation, matching the reference grid.
+// Visual category cards. Only "homeopathy" opens a product modal; the rest are presentational.
 const categories = [
   { title: 'pharmacy & health', img: '/categories/pharmacy-health.png' },
   { title: 'homeopathy', img: '/categories/homeopathy.png' },
@@ -12,7 +15,12 @@ const categories = [
   { title: 'her & him', img: '/categories/her-him.png' },
 ]
 
+const cardBase =
+  'card-in flex w-full flex-col items-center rounded-2xl bg-neutral-900/90 p-6 text-center ring-1 ring-white/10 backdrop-blur transition-shadow hover:ring-white/20'
+
 export default function OrderPage({ onBack }: OrderPageProps) {
+  const [showProduct, setShowProduct] = useState(false)
+
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Top bar — mirrors the hero navbar language */}
@@ -39,27 +47,49 @@ export default function OrderPage({ onBack }: OrderPageProps) {
       {/* Category grid */}
       <main className="mx-auto max-w-6xl px-6 pb-20">
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
-          {categories.map((c, i) => (
-            <div
-              key={c.title}
-              className="card-in flex flex-col items-center rounded-2xl bg-neutral-900/90 p-6 text-center ring-1 ring-white/10 backdrop-blur transition-shadow hover:ring-white/20"
-              style={{ animationDelay: `${i * 0.06}s` }}
-            >
-              <div className="h-28 w-28 overflow-hidden rounded-full ring-1 ring-white/10 md:h-32 md:w-32">
-                <img
-                  src={c.img}
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                  className="h-full w-full object-cover"
-                />
+          {categories.map((c, i) => {
+            const style = { animationDelay: `${i * 0.06}s` }
+            const inner = (
+              <>
+                <div className="h-28 w-28 overflow-hidden rounded-full ring-1 ring-white/10 md:h-32 md:w-32">
+                  <img
+                    src={c.img}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <h2 className="mt-5 text-lg font-medium text-white">{c.title}</h2>
+                <p className="mt-1 text-sm text-white/50">view products →</p>
+              </>
+            )
+
+            // Only the homeopathy card is interactive → opens the product modal.
+            if (c.title === 'homeopathy') {
+              return (
+                <button
+                  key={c.title}
+                  type="button"
+                  onClick={() => setShowProduct(true)}
+                  className={`${cardBase} focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70`}
+                  style={style}
+                >
+                  {inner}
+                </button>
+              )
+            }
+
+            return (
+              <div key={c.title} className={cardBase} style={style}>
+                {inner}
               </div>
-              <h2 className="mt-5 text-lg font-medium text-white">{c.title}</h2>
-              <p className="mt-1 text-sm text-white/50">view products →</p>
-            </div>
-          ))}
+            )
+          })}
         </div>
       </main>
+
+      {showProduct && <ProductModal onClose={() => setShowProduct(false)} />}
     </div>
   )
 }
