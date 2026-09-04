@@ -96,6 +96,7 @@ export default function Hero() {
             <CountUp
               to={1.5}
               decimals={1}
+              duration={5700}
               prefix="+"
               suffix="K"
               className="text-4xl font-medium tabular-nums tracking-tight text-white [text-shadow:0_1px_14px_rgba(0,0,0,0.5)] md:text-5xl"
@@ -112,6 +113,7 @@ export default function Hero() {
             <CountUp
               to={300}
               decimals={0}
+              duration={5700}
               suffix="K+"
               className="text-4xl font-medium tabular-nums tracking-tight text-white [text-shadow:0_1px_14px_rgba(0,0,0,0.5)] md:text-5xl"
             />
