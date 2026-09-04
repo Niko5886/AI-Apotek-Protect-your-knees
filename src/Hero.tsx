@@ -75,13 +75,13 @@ export default function Hero() {
           </span>
           <span
             className="hero-title reveal-word absolute right-4 top-[38%] text-[7.47vw] font-medium text-white [text-shadow:0_2px_24px_rgba(0,0,0,0.35)] md:right-10 md:text-[6.93vw]"
-            style={{ animationDelay: '0.45s' }}
+            style={{ animationDelay: '0.73s' }}
           >
             your
           </span>
           <span
             className="hero-title reveal-word absolute left-[13%] top-[62%] text-[7.47vw] font-medium text-white [text-shadow:0_2px_24px_rgba(0,0,0,0.35)] md:left-[22%] md:text-[6.93vw]"
-            style={{ animationDelay: '0.9s' }}
+            style={{ animationDelay: '1.45s' }}
           >
             knees
           </span>
