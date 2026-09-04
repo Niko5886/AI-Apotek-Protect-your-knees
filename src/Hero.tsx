@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import CountUp from './CountUp'
 
 const navLinks = ['medications', 'discounts', 'company', 'support']
@@ -7,9 +8,9 @@ const focusDark =
 const focusLight =
   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/50 focus-visible:ring-offset-2 focus-visible:ring-offset-white'
 
-type HeroProps = { onOrder: () => void }
+export default function Hero() {
+  const navigate = useNavigate()
 
-export default function Hero({ onOrder }: HeroProps) {
   return (
     <main className="relative h-screen w-full overflow-hidden bg-black">
       {/* Looping fullscreen background video (decorative) */}
@@ -54,7 +55,7 @@ export default function Hero({ onOrder }: HeroProps) {
           {/* Right button */}
           <button
             type="button"
-            onClick={onOrder}
+            onClick={() => navigate('/order')}
             className={`rounded-full bg-white px-6 py-3 text-sm font-normal text-black transition-colors hover:bg-neutral-200 ${focusLight}`}
           >
             Order

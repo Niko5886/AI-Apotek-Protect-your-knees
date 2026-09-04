@@ -1,18 +1,26 @@
-import { useState } from 'react'
+import { useEffect } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Hero from './Hero'
 import OrderPage from './OrderPage'
 
-export default function App() {
-  const [page, setPage] = useState<'hero' | 'order'>('hero')
-
-  function navigate(to: 'hero' | 'order') {
+// Reset scroll to top whenever the route changes.
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
     window.scrollTo(0, 0)
-    setPage(to)
-  }
+  }, [pathname])
+  return null
+}
 
-  return page === 'hero' ? (
-    <Hero onOrder={() => navigate('order')} />
-  ) : (
-    <OrderPage onBack={() => navigate('hero')} />
+export default function App() {
+  return (
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/order" element={<OrderPage />} />
+        <Route path="*" element={<Hero />} />
+      </Routes>
+    </>
   )
 }

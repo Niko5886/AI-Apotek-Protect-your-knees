@@ -1,7 +1,6 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import ProductModal from './ProductModal'
-
-type OrderPageProps = { onBack: () => void }
 
 // Visual category cards. Only "homeopathy" opens a product modal; the rest are presentational.
 const categories = [
@@ -18,7 +17,8 @@ const categories = [
 const cardBase =
   'card-in flex w-full flex-col items-center rounded-2xl bg-neutral-900/90 p-6 text-center ring-1 ring-white/10 backdrop-blur transition-shadow hover:ring-white/20'
 
-export default function OrderPage({ onBack }: OrderPageProps) {
+export default function OrderPage() {
+  const navigate = useNavigate()
   const [showProduct, setShowProduct] = useState(false)
 
   return (
@@ -27,7 +27,7 @@ export default function OrderPage({ onBack }: OrderPageProps) {
       <header className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
         <button
           type="button"
-          onClick={onBack}
+          onClick={() => navigate('/')}
           className="flex items-center gap-2 rounded-full bg-neutral-900/90 px-5 py-2.5 text-sm text-neutral-300 ring-1 ring-white/10 backdrop-blur transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
         >
           <span aria-hidden="true">←</span> back
