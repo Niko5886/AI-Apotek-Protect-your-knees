@@ -35,7 +35,7 @@ framework-idiomatic throughout.
 
 ## ✨ Highlights
 
-- **Cinematic hero** — a fullscreen, `object-cover` looping video sits behind a floating, pill-shaped navbar.
+- **CinematiC hero** — a fullscreen, `object-cover` looping video sits behind a floating, pill-shaped navbar.
 - **Word-by-word headline** — `protect / your / knees` reveals with a staggered **blur → rise → fade**
   sequence on a custom `cubic-bezier` easing.
 - **Live count-up stats** — `+1.5K` and `300K+` animate from zero on every load via `requestAnimationFrame`
