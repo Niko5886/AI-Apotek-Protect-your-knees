@@ -5,7 +5,6 @@
   Built with <strong>React + TypeScript + Tailwind CSS</strong> on <strong>Vite</strong> — a looping cinematic
   hero, animated statistics, and a themed product-category view.
 </p>
-
 <p align="center">
   <img src="https://img.shields.io/badge/Live%20Demo%20%E2%86%92-Coming%20Soon-0a0a0a?style=for-the-badge&labelColor=0a0a0a" alt="Live Demo — Coming Soon" height="34" />
 </p>
